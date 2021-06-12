@@ -8,12 +8,12 @@ import webdriverdownloader as wdd
 
 
 # For Firefox gecko driver: 
-gecko_dd = wdd.GeckoDriverDownloader()
-gecko_dd.download_and_install()
+#gecko_dd = wdd.GeckoDriverDownloader()
+#gecko_dd.download_and_install()
 
 # For Chrome driver:
-# chrome_dd = wdd.ChromeDriverDownloader()
-# chrome_dd.download_and_install()
+chrome_dd = wdd.ChromeDriverDownloader()
+chrome_dd.download_and_install()
 
 # For Opera driver:
 # opera_dd = wdd.OperaChromiumDriverDownloader()
@@ -25,10 +25,10 @@ class InstagramBot:
     def __init__(self, username, password):
         self.username = username
         self.password = password
-        self.bot = webdriver.Firefox()
+        #self.bot = webdriver.Firefox()
 
         # Uncomment following line for Chrome browser
-        # self.bot = webdriver.Chrome()
+        self.bot = webdriver.Chrome()
         
         # Uncomment following line for Opera browser
         # self.bot = webdriver.Opera()
