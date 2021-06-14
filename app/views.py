@@ -6,8 +6,8 @@ import webdriverdownloader as wdd
 
 
 # For Firefox gecko driver: 
-gecko_dd = wdd.GeckoDriverDownloader()
-gecko_dd.download_and_install()
+chrome_dd = wdd.ChromeDriverDownloader()
+chrome_dd.download_and_install()
 
 @app.route('/')
 def index():
